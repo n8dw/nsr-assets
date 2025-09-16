@@ -1,0 +1,5 @@
+# CORS
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "https://nightshade.red, https://dev.nightshade.red, https://assets.nightshade.red, https://dev.assets.nightshade.red, https://my.nightshade.red, https://dev.my.nightshade.red, https://cache.nightshade.red, https://dev.cache.nightshade.red, https://pantry.nightshade.red, https://dev.pantry.nightshade.red, https://tab.nightshade.red, https://dev.tab.nightshade.red"

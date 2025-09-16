@@ -1,0 +1,80 @@
+/* Fonts */
+/* Parkinsans - Light, Medium, Regular, Semibold, Bold, ExtraBold (multifile) */
+/* since 17.3.5 */
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/public/font/Parkinsans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/public/font/Parkinsans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/public/font/Parkinsans-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/public/font/Parkinsans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/public/font/Parkinsans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/public/font/Parkinsans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}   
+
+/* Variables */
+ :root {
+    --light: #F2F7F3; /* #FFC3C3 */
+    --normal: #C0DAC6; /* #FF9999 */
+    --medium: #47825D; /* #FF5F5F */
+    --medium-dark: #2a523b; /* #9C1717 */
+    --dark: #101E17; /* #280101 */
+    --font-h1: 'Parkinsans', monospace;
+    --font-hx: 'Parkinsans', monospace;
+    --font-body: 'Parkinsans', sans-serif;
+    --font-dyn-u: 'Parkinsans', monospace;
+    --font-dyn: 'Parkinsans', monospace;
+    --font-sans: 'Parkinsans', sans-serif;
+}
+
+/*
+ * REDS
+ * #FFF0F0, #FFC1C1, #FF2727, #AE0606, #420000
+ * #F5F5F5, #F0D8D8, #C27171, #733A3A, #351A1A
+ * #F9F5F3, #E4CEC4, #B26E5D, #703E3C, #1E1010
+ * #FBF5F5, #F3D5D5, #CA6969, #7D3737, #4C1F1F
+ *
+ * BLUES
+ * #F2F9F8, #C1E0E0, #488E92, #345156, #1B2D31
+ *
+ * PURPLES
+ * #F1F3FC, #D1D5F4, #817CD8, #4F448F, #12101E
+ *
+ * GREENS
+ * #F2F7F3, #C0DAC6, #47825D, #2a523b, #101E17
+ *
+ * UICOLORS CODES
+ * 50, 200, 500, 800, 950
+ */
