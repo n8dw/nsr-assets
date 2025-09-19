@@ -91,11 +91,12 @@ dotlottie-player {
 
 .pageHeader {
     width: 100%;
-    height: max-content;
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid var(--medium-dark);
     margin-bottom: 10px;
     border-radius: 15px;
     overflow: hidden;
@@ -118,14 +119,11 @@ dotlottie-player {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 2px solid var(--normal);
+    border: 2px solid transparent;
     width: max-content;
     height: 55px !important;
     box-sizing: border-box;
-}
-
-.pointed:hover {
-    border-color: var(--medium);
+    padding: 10px;
 }
 
 .phContent {
@@ -183,7 +181,7 @@ dotlottie-player {
 .pageContent {
     width: 100%;
     max-width: 1000px;
-    height: calc(100% - 90px - 80px);
+    height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -471,26 +469,30 @@ dotlottie-player {
 
 /* == MEGA BUTTON == */
 .megaButton {
-    width: 40%;
+    width: 400px;
     height: max-content;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--normal);
     box-sizing: border-box;
     border-radius: 15px;
     border: 2px solid var(--normal);
     color: var(--dark);
+    overflow: hidden;
 }
 
 .megaButton .megaBtnIcon {
-    width: max-content;
+    width: 65px;
     height: 65px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0 !important;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .megaButton .megaBtnIcon img {
@@ -499,14 +501,17 @@ dotlottie-player {
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid var(--dark);
+    margin: 5px !important;
 }
 
 .megaButton .megaBtnText {
-    width: -webkit-fill-available;
+    width: max-content;
+    max-width: 315px;
     height: max-content;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    margin: unset !important;
 }
 
 .megaButton .left {
@@ -520,7 +525,7 @@ dotlottie-player {
 
 .megaButton .megaBtnText h2 {
     font-family: var(--font-dyn);
-    font-weight: 500;
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -532,11 +537,6 @@ dotlottie-player {
     background-color: transparent;
     border-color: var(--medium);
     color: var(--medium);
-}
-
-.megaButton:hover .megaBtnText h2 {
-    font-weight: 900;
-    font-family: var(--font-dyn-u);
 }
 
 .megaButton:hover .megaBtnIcon img {
@@ -615,8 +615,8 @@ dotlottie-player {
     border: 1px solid transparent;
     background-color: var(--dark);
     margin-top: 10px;
-    border-radius: 15px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .productLabel {
@@ -624,7 +624,7 @@ dotlottie-player {
     font-size: 0.8rem;
     font-family: var(--font-dyn);
     font-weight: 200;
-    color: var(--light);
+    color: var(--medium);
 }
 
 .productLabel img {
