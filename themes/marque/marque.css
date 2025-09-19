@@ -132,7 +132,6 @@ dotlottie-player {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 92px;
 }
 
 .phCustom {
@@ -161,7 +160,7 @@ dotlottie-player {
     align-items: center;
     justify-content: center;
     background-color: var(--dark);
-    border-radius: 20px;
+    border-radius: 15px;
     border: 4px solid transparent;
 }
 
