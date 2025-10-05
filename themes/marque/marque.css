@@ -300,7 +300,7 @@ dotlottie-player {
     flex-wrap: wrap;
 }
 
-.fullRow .content:not(.table) * {
+.fullRow .content:not(.table) *:not(span) * {
     margin: 10px;
 }
 
@@ -460,9 +460,8 @@ dotlottie-player {
 }
 
 .fineprint {
-    font-size: 0.5rem;
-    color: darkgrey;
-    opacity: 0.6;
+    font-size: 0.8rem;
+    color: var(--light);
     font-family: var(--font-dyn);
 }
 
@@ -901,6 +900,14 @@ dotlottie-player {
     border: 1px solid var(--normal);
     padding: 10px 5px 10px 5px;
     font-family: var(--font-dyn);
+}
+
+.flexForm label {
+    width: inherit;
+    font-family: var(--font-dyn);
+    font-size: 1.2rem;
+    color: var(--normal);
+    margin-bottom: 2px !important;
 }
 
 .flexForm .large {
