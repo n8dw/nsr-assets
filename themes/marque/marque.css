@@ -467,7 +467,7 @@ dotlottie-player {
 
 /* == MEGA BUTTON == */
 .megaButton {
-    width: 400px;
+    width: 300px;
     height: max-content;
     display: flex;
     flex-direction: row;
