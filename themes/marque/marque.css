@@ -248,13 +248,15 @@ dotlottie-player {
 .fullRow, .fullRowCompact {
     width: -webkit-fill-available;
     height: max-content;
-    border: 2px solid var(--normal);
+    border: 1px solid var(--medium-dark);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    border-left-width: 6px;
+    border-right-width: 6px;
 }
 
 .fullRow .header, .fullRowCompact .header {
@@ -271,10 +273,11 @@ dotlottie-player {
 
 .fullRow .header h2, .fullRowCompact .header h2 {
     margin: 0;
-    color: var(--normal);
+    color: var(--medium);
     font-family: var(--font-dyn-u);
     font-weight: 900;
     box-sizing: border-box;
+    opacity: 0.7;
 }
 
 .fullRow .header h3, .fullRowCompact .header h3 {
@@ -283,7 +286,7 @@ dotlottie-player {
 
 .fullRow .header .smallTitle, .fullRowCompact .header .smallTitle {
     margin: 0;
-    color: var(--normal);
+    color: var(--medium-dark);
     font-family: var(--font-dyn);
     font-weight: 200;
     box-sizing: border-box;
@@ -468,38 +471,39 @@ dotlottie-player {
 /* == MEGA BUTTON == */
 .megaButton {
     width: 300px;
-    height: max-content;
+    height: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--normal);
     box-sizing: border-box;
     border-radius: 15px;
     border: 2px solid var(--normal);
-    color: var(--dark);
+    color: var(--normal);
     overflow: hidden;
+    border-left-width: 6px;
+    border-right-width: 6px;
 }
 
 .megaButton .megaBtnIcon {
     width: 65px;
-    height: 65px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 !important;
+    margin: unset !important;
     overflow: hidden;
     box-sizing: border-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    border-right-color: var(--normal);
 }
 
 .megaButton .megaBtnIcon img {
-    background-color: var(--normal);
-    border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid var(--dark);
-    margin: 5px !important;
+    margin: 3px !important;
 }
 
 .megaButton .megaBtnText {
@@ -523,7 +527,7 @@ dotlottie-player {
 
 .megaButton .megaBtnText h2 {
     font-family: var(--font-dyn);
-    font-weight: lighter;
+    font-weight: 200;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -532,13 +536,12 @@ dotlottie-player {
 }
 
 .megaButton:hover {
-    background-color: transparent;
-    border-color: var(--medium);
-    color: var(--medium);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
 }
 
-.megaButton:hover .megaBtnIcon img {
-    background-color: var(--medium);
+.megaButton:hover .megaBtnIcon {
+    border-right-color: transparent;
 }
 
 .mbWide {
@@ -552,92 +555,42 @@ dotlottie-player {
     /* padding: 10px; */
 }
 
-/* == LARGE BUTTON == */
-.largeButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    width: 45%;
-    min-width: 300px;
-    background-color: transparent;
-    border: 2px solid var(--normal);
-    border-radius: 10px;
-    color: var(--normal);
-}
-
-.largeButton .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 65px;
-    width: 65px;
-    border: 2px solid var(--medium-dark);
-    border-radius: 10px;
-}
-
-.largeButton .right {
-    width: max-content;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.largeButton .right h3 {
-    margin-bottom: unset;
-    font-size: 1.3rem;
-    font-family: var(--font-dyn-u);
-}
-
-.largeButton:hover {
-    background-color: var(--medium);
-    border-color: var(--medium);
-    color: var(--dark);
-}
-
-.largeButton:hover .left {
-    background-color: var(--dark);
-}
-
 /* COMING SOON BUTTON */
-/* == MEGA BUTTON == */
 .comingSoonButton {
     width: 300px;
-    height: max-content;
+    height: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
     box-sizing: border-box;
     border-radius: 15px;
-    border: 2px solid lightgray;
-    color: gray;
+    border: 2px solid #adb5bd;
+    color: #adb5bd;
     overflow: hidden;
+    border-left-width: 6px;
+    border-right-width: 6px;
 }
 
 .comingSoonButton .megaBtnIcon {
     width: 65px;
-    height: 65px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 !important;
+    margin: unset !important;
     overflow: hidden;
     box-sizing: border-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    border-right-color: #adb5bd;
 }
 
 .comingSoonButton .megaBtnIcon img {
-    background-color: lightgray;
-    border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid var(--dark);
-    margin: 5px !important;
+    margin: 3px !important;
 }
 
 .comingSoonButton .megaBtnText {
@@ -670,13 +623,12 @@ dotlottie-player {
 }
 
 .comingSoonButton:hover {
-    background-color: transparent;
-    border-color: darkgray;
-    color: darkgray;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
 }
 
-.comingSoonButton:hover .megaBtnIcon img {
-    background-color: darkgray;
+.comingSoonButton:hover .megaBtnIcon {
+    border-right-color: transparent;
 }
 
 /* == Page Footer == */
@@ -1187,7 +1139,7 @@ dotlottie-player {
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 600px) {
-    .megaButton, .mbWide, .homeNetItem {
+    .megaButton, .comingSoonButton, .mbWide, .homeNetItem {
         width: 90%;
     }
     .partial {

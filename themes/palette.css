@@ -1,48 +1,131 @@
 /* Fonts */
-/* Parkinsans - Light, Medium, Regular, Semibold, Bold, ExtraBold (multifile) */
-/* since 17.3.5 */
+/* Bogita Mono */
+/* @since 18.3.0 (MyNSR) */
+/* Thin */
 @font-face {
-    font-family: 'Parkinsans';
-    src: url('/public/font/Parkinsans-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Parkinsans';
-    src: url('/public/font/Parkinsans-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-ThinOblique.woff2') format('woff2');
+  font-weight: 100;
+  font-style: oblique;
+}
+
+/* Ultra Light */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Parkinsans';
-    src: url('/public/font/Parkinsans-Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-UltraLightOblique.woff2') format('woff2');
+  font-weight: 200;
+  font-style: oblique;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Parkinsans';
-    src: url('/public/font/Parkinsans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-LightOblique.woff2') format('woff2');
+  font-weight: 300;
+  font-style: oblique;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Parkinsans';
-    src: url('/public/font/Parkinsans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Oblique.woff2') format('woff2');
+  font-weight: 400;
+  font-style: oblique;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Parkinsans';
-    src: url('/public/font/Parkinsans-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}   
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-MediumOblique.woff2') format('woff2');
+  font-weight: 500;
+  font-style: oblique;
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-SemiBoldOblique.woff2') format('woff2');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-BoldOblique.woff2') format('woff2');
+  font-weight: 700;
+  font-style: oblique;
+}
+
+/* Ultra Bold */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-UltraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-UltraBoldOblique.woff2') format('woff2');
+  font-weight: 800;
+  font-style: oblique;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bogita Mono';
+  src: url('/public/fonts/BogitaMono/BogitaMono-BlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: oblique;
+}
 
 /* Variables */
  :root {
