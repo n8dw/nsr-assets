@@ -1,0 +1,48 @@
+/* OSD Palette - SECONDARY */
+/* 2026-05-21 */
+
+/* Fonts */
+/* Etch */
+@font-face {
+  font-family: 'Exo';
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.0/font/Exo/Exo-variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Stack Sans Notch */
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.0/font/StackSansNotch/StackSansNotch-variable.woff2') format('woff2-variations');
+  font-weight: 100 900; 
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Victor Mono */
+@font-face {
+  font-family: 'Victor Mono';
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.0/font/VictorMono/VictorMono-variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+:root {
+  --color-50: #F4EEFF;
+  --color-100: #EBE0FF;
+  --color-200: #DCC7FE;
+  --color-300: #C8A4FD;
+  --color-400: #BA80F9;
+  --color-500: #B262F2;
+  --color-600: #AB45E6;
+  --color-700: #9737CB;
+  --color-800: #792FA4;
+  --color-900: #612D82;
+  --color-950: #1A0C22;
+  --font-primary: 'Stack Sans Notch', sans-serif;
+  --font-secondary: 'Etch', sans-serif;
+  --font-mono: 'Victor Mono', monospace;
+}
