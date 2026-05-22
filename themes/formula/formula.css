@@ -849,6 +849,7 @@ dotlottie-player {
         height: max-content;
         width: 100%;
         flex-wrap: wrap;
+        min-height: 105px;
     }
 
     .pageHeader .product {
