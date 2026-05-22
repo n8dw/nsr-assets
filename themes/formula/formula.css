@@ -1,21 +1,14 @@
-/* == Formula Theme, based on Marque == */
+/* == Marque Theme == */
 /* == Global Mods == */
 html {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-}
-
-.bright {
-    background-color: var(--normal);
-}
-
-.dark {
-    background-color: var(--dark);
+    padding: 10px;
 }
 
 body {
@@ -29,26 +22,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.full-wide {
+    background-color: var(--color-950);
     height: 100vh;
     width: 100vw;
-}
-
-
-.full {
-    height: 100vh;
-    max-width: 850px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.partial {
-    height: 70%;
-    max-width: 850px
 }
 
 /* == Page Item == */
@@ -60,9 +36,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.full-wide .pageItem, .full .pageItem {
     min-height: 100%;
 }
 
@@ -96,19 +69,18 @@ dotlottie-player {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid var(--medium-dark);
+    border: 1px solid transparent;
     margin-bottom: 10px;
     border-radius: 15px;
     overflow: hidden;
-    background-color: var(--dark);
     box-sizing: border-box;
 }
 
 .pageHeader h1 {
     margin: 0;
     margin-left: 20px;
-    color: var(--normal);
-    font-family: var(--font-dyn-u);
+    color: var(--color-200);
+    font-family: var(--font-primary);
     font-size: 1.2rem;
     text-align: right;
 }
@@ -142,9 +114,9 @@ dotlottie-player {
 .phCustom p {
     margin: 0;
     margin-right: 20px;
-    font-family: var(--font-dyn);
+    font-family: var(--font-primary);
     font-weight: 300;
-    color: var(--normal);
+    color: var(--color-100);
     text-align: right;
 }
 
@@ -159,27 +131,17 @@ dotlottie-player {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark);
     border-radius: 15px;
-    border: 4px solid transparent;
+    border: 1px solid transparent;
 }
 
 .phCompIcon:hover {
-    border-color: var(--medium-dark);
-}
-
-.phCompIcon h1 {
-    margin: 0;
-    font-size: 1rem;
-    font-family: var(--font-dyn-u);
-    font-weight: 900;
-    color: var(--medium-dark);
+    border-color: var(--color-600);
 }
 
 /* == Page Content == */
 .pageContent {
     width: 100%;
-    max-width: 1000px;
     height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
@@ -189,14 +151,14 @@ dotlottie-player {
     border: 1px solid transparent;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: var(--dark);
+    background-color: var(--color-950);
     box-sizing: border-box;
     row-gap: 10px;
 }
 
 .pageContent::-webkit-scrollbar {
     display: inline;
-    width: 6px;
+    max-width: 10px;
 }
 
 .pageContent::-webkit-scrollbar-thumb {
@@ -216,9 +178,9 @@ dotlottie-player {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    border: 2px solid var(--medium-dark);
+    border: 2px solid transparent;
     border-radius: 10px;
-    background-color: var(--medium-dark);
+    background-color: var(--color-400);
 }
 
 .miniRow .miniRowItem {
@@ -226,21 +188,21 @@ dotlottie-player {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20px;
+    height: 30px;
     overflow: hidden;
 }
 
 .miniRowItem h2 {
-    font-family: var(--font-dyn);
-    font-size: 0.9rem;
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
     margin: 0px 0px 0px 5px;
     color: var(--normal);
 }
 
 .miniRowItem p {
-    font-family: var(--font-dyn);
+    font-family: var(--font-secondary);
     font-weight: 200;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0px 5px 0px 0px;
     color: var(--normal);
 }
@@ -248,15 +210,15 @@ dotlottie-player {
 .fullRow, .fullRowCompact {
     width: -webkit-fill-available;
     height: max-content;
-    border: 1px solid var(--medium-dark);
+    border: 1px solid var(--color-300);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-left-width: 6px;
-    border-right-width: 6px;
+    border-bottom-width: 3px;
+    border-right-width: 4px;
 }
 
 .fullRow .header, .fullRowCompact .header {
@@ -268,16 +230,16 @@ dotlottie-player {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: var(--normal);
+    color: var(--color-300);
 }
 
 .fullRow .header h2, .fullRowCompact .header h2 {
     margin: 0;
-    color: var(--medium);
-    font-family: var(--font-dyn-u);
+    color: var(--color-100);
+    font-family: var(--font-primary);
     font-weight: 900;
     box-sizing: border-box;
-    opacity: 0.7;
+    font-size: 2rem;
 }
 
 .fullRow .header h3, .fullRowCompact .header h3 {
@@ -286,8 +248,8 @@ dotlottie-player {
 
 .fullRow .header .smallTitle, .fullRowCompact .header .smallTitle {
     margin: 0;
-    color: var(--medium-dark);
-    font-family: var(--font-dyn);
+    color: var(--color-50);
+    font-family: var(--font-primary);
     font-weight: 200;
     box-sizing: border-box;
     font-size: 1.2rem;
@@ -308,31 +270,24 @@ dotlottie-player {
 }
 
 .content .bordered {
-    border: 3px solid var(--normal);
+    border: 3px solid var(--color-50);
     border-radius: 10px;
 }
 
 .fullRow .table, .fullRowCompact table {
     align-items: center;
     justify-content: flex-start;
-    /* border-bottom: 1px solid var(--normal); */
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .fullRow .table:not(.last), .fullRowCompact .table:not(.last) {
-    border-bottom: 1px solid var(--normal);
+    border-bottom: 1px solid var(--color-50);
 }
 
 .fullRow .borderBottom, .fullRowCompact .borderBottom {
-    border-bottom: 2px solid var(--normal);
+    border-bottom: 2px solid var(--color-50);
     margin-bottom: 10px;
-}
-
-#wifiPwdTxt {
-    color: var(--normal);
-    font-family: var(--font-dyn);
-    font-weight: 100;
 }
 
 .contentRowHeader {
@@ -342,16 +297,15 @@ dotlottie-player {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    color: var(--light);
+    color: var(--color-50);
     font-size: 1.25rem;
 }
 
 .contentRowBody {
     width: -webkit-fill-available;
-    /* max-width: 350px; */
     height: max-content;
-    font-family: var(--font-dyn);
-    color: var(--normal);
+    font-family: var(--font-mono);
+    color: var(--color-50);
 }
 
 .contentRowBody h4 {
@@ -366,6 +320,7 @@ dotlottie-player {
     font-weight: 100;
 }
 
+/*
 .homeNetItem {
     min-width: 250px;
     height: max-content;
@@ -417,11 +372,12 @@ dotlottie-player {
 .metaRow * {
     margin: unset !important;
 }
+*/
 
 .fullRow h3 {
     display: block;
     margin: unset;
-    font-family: var(--font-dyn);
+    font-family: var(--font-primary);
 }
 
 .fullRow h4 {
@@ -429,7 +385,7 @@ dotlottie-player {
 }
 
 .fullRow .content .navItem .navBtn {
-    border: 1px solid var(--normal);
+    border: 1px solid var(--color-400);
     background-color: transparent;
     border-radius: 10px;
     padding: 10px;
@@ -440,7 +396,7 @@ dotlottie-player {
 }
 
 .fullRow .content .navItem .navBtn:enabled:hover {
-    background-color: var(--normal);
+    background-color: var(--color-50);
     color: var(--dark);
 }
 
@@ -454,18 +410,10 @@ dotlottie-player {
     margin: unset !important;
 }
 
-.discordChannel {
-    background-color: #7289DA;
-    color: #110420;
-    padding: 2px 5px 2px 5px;
-    border-radius: 2px;
-    font-weight: 900;
-}
-
 .fineprint {
     font-size: 0.8rem;
-    color: var(--light);
-    font-family: var(--font-dyn);
+    color: var(--color-700);
+    font-family: var(--font-secondary);
 }
 
 /* == MEGA BUTTON == */
@@ -478,8 +426,8 @@ dotlottie-player {
     justify-content: space-between;
     box-sizing: border-box;
     border-radius: 15px;
-    border: 2px solid var(--normal);
-    color: var(--normal);
+    border: 2px solid var(--color-300);
+    color: var(--color-100);
     overflow: hidden;
     border-left-width: 6px;
     border-right-width: 6px;
@@ -497,7 +445,7 @@ dotlottie-player {
     box-sizing: border-box;
     border: 3px solid transparent;
     border-radius: 10px;
-    border-right-color: var(--normal);
+    border-right-color: var(--color-400);
 }
 
 .megaButton .megaBtnIcon img {
@@ -526,7 +474,7 @@ dotlottie-player {
 }
 
 .megaButton .megaBtnText h2 {
-    font-family: var(--font-dyn);
+    font-family: var(--font-primary);
     font-weight: 200;
     display: flex;
     flex-direction: column;
@@ -544,103 +492,16 @@ dotlottie-player {
     border-right-color: transparent;
 }
 
-.mbWide {
-    width: 46%;
-}
-
-.megaButton .megaBtnIcon h3 {
-    font-family: var(--font-dyn);
-    font-weight: 100;
-    font-size: 1.2rem;
-    /* padding: 10px; */
-}
-
-/* COMING SOON BUTTON */
-.comingSoonButton {
-    width: 300px;
-    height: 75px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border-radius: 15px;
-    border: 2px solid #adb5bd;
-    color: #adb5bd;
-    overflow: hidden;
-    border-left-width: 6px;
-    border-right-width: 6px;
-}
-
-.comingSoonButton .megaBtnIcon {
-    width: 65px;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: unset !important;
-    overflow: hidden;
-    box-sizing: border-box;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    border-right-color: #adb5bd;
-}
-
-.comingSoonButton .megaBtnIcon img {
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 3px !important;
-}
-
-.comingSoonButton .megaBtnText {
-    width: max-content;
-    max-width: 315px;
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin: unset !important;
-}
-
-.comingSoonButton .left {
-    justify-content: flex-start;
-}
-
-.comingSoonButton .right {
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-.comingSoonButton .megaBtnText h2 {
-    font-family: var(--font-dyn);
-    font-weight: lighter;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: right;
-}
-
-.comingSoonButton:hover {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-
-.comingSoonButton:hover .megaBtnIcon {
-    border-right-color: transparent;
-}
-
 /* == Page Footer == */
 .pageFooter {
     width: 100%;
-    height: 40px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border: 1px solid transparent;
-    background-color: var(--dark);
+    background-color: var(--color-950);
     margin-top: 10px;
     box-sizing: border-box;
     overflow: hidden;
@@ -648,10 +509,10 @@ dotlottie-player {
 
 .productLabel {
     margin: 0px;
-    font-size: 0.8rem;
-    font-family: var(--font-dyn);
+    font-size: 1rem;
+    font-family: var(--font-secondary);
     font-weight: 200;
-    color: var(--medium);
+    color: var(--color-600);
 }
 
 .productLabel img {
@@ -671,12 +532,12 @@ dotlottie-player {
 .marqueDialog {
     max-width: 800px;
     padding: 10px;
-    background-color: var(--dark);
-    color: var(--normal);
+    background-color: var(--color-900);
+    color: var(--color-100);
     backdrop-filter: blur(10px);
-    border: 4px solid var(--normal);
-    border-radius: 20px;
-    width: 80%;
+    border: 1px solid var(--color-600);
+    border-radius: 10px;
+    width: 90%;
     overflow: hidden scroll;
 }
 
@@ -685,7 +546,7 @@ dotlottie-player {
 }
 
 .marqueDialog::backdrop {
-    background-color: var(--dark);
+    background-color: var(--color-700);
     opacity: 0.8;
 }
 
@@ -696,7 +557,7 @@ dotlottie-player {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--font-dyn);
+    font-family: var(--font-primary);
     margin: 0;
     margin-bottom: 10px;
 }
@@ -722,49 +583,48 @@ dotlottie-player {
     margin-bottom: 10px;
     text-align: center;
     font-size: 0.9rem;
-    font-family: var(--font-dyn);
+    font-family: var(--font-secondary);
     font-weight: 100;
     opacity: 0.75;
 }
 
 .marqueDialog input::placeholder {
-    font-family: var(--font-dyn);
+    font-family: var(--font-secondary);
     font-weight: 500;
-    color: var(--font-medium);
+    color: var(--color-50);
     opacity: 0.5;
 }
 
 .marqueDialog input[type="text"], .marqueDialog input[type="number"] {
     width: -webkit-fill-available;
-    font-family: var(--font-dyn);
+    font-family: var(--font-secondary);
     font-weight: 300;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--normal);
+    border-bottom: 1px solid var(--color-50);
     margin-bottom: 10px;
     font-size: 15px;
-    color: var(
-    --normal);
+    color: var(--color-50);
     height: 30px;
     text-align: center;
 }
 
 .marqueDialog label {
-    font-family: var(--font-dyn);
-    color: var(--normal);
+    font-family: var(--font-secondary);
+    color: var(--color-50);
 }
 
 .marqueDialog select {
     width: -webkit-fill-available;
     margin-bottom: 10px;
     background-color: transparent;
-    color: var(--normal);
-    font-family: var(--font-dyn);
+    color: var(--color-50);
+    font-family: var(--font-secondary);
     font-weight: 500;
     text-align: center;
     height: 30px;
     border-radius: 10px;
-    border: 1px solid var(--normal);
+    border: 1px solid var(--color-50);
     opacity: 0.8;
 }
 
@@ -781,37 +641,36 @@ dotlottie-player {
     row-gap: 10px;
     margin-top: 30px;
     padding-top: 10px;
-    border-top: 2px solid var(--normal);
+    border-top: 2px solid var(--color-50);
 }
 
 .marqueDialog .btn, .marqueDialog input[type="submit"] {
     height: 50px;
     min-width: max-content;
     width: 20%;
-    background-color: var(--normal);
+    background-color: var(--color-200);
     border: 1px solid transparent;
     border-radius: 10px;
-    font-family: var(--font-dyn);
+    font-family: var(--font-primary);
     font-weight: bold;
     margin-top: auto;
 }
 
 .marqueDialog .btn:enabled:hover, .marqueDialog input[type="submit"]:hover {
-    border-color: var(--normal);
+    border-color: var(--color-100);
     background-color: transparent;
     color: var(--normal);
 }
 
 .marqueDialog .controls button {
     background-color: transparent;
-    color: var(--medium-dark);
-    border-color: var(--medium-dark);
+    color: var(--color-200);
+    border-color: var(--color-400);
 }
 
 .marqueDialog .controls button:hover {
-    background-color: var(--light);
-    color: var(--dark);
-    border-color: var(--light);
+    color: var(--color-50);
+    border-color: var(--color-800);
 }
 
 .marqueDialog .dynWrap {
@@ -827,78 +686,6 @@ dotlottie-player {
     column-gap: 10px;
     flex-wrap: wrap;
     box-sizing: border-box;
-}
-
-.compMeta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    border: 4px solid var(--medium-dark);
-    border-radius: 10px;
-    box-sizing: border-box;
-    min-height: 125px;
-    min-width: 250px;
-}
-
-.dynWrap h3, .dynWrap h4, .dynWrap h5, .dynWrap h6 {
-    font-family: var(--font-dyn);
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.dynWrap p {
-    font-family: var(--font-dyn);
-    font-weight: normal;
-    margin: 5px;
-}
-
-.dgMessage {
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 6px solid var(--medium-dark);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: var(--normal);
-    color: var(--dark);
-}
-
-.dgMessageWrap {
-    padding: 10px;
-}
-
-.dgMessageWrap h3 {
-    font-family: var(--font-dyn);
-    font-weight: 750;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-.dgMessageWrap p {
-    font-family: var(--font-dyn);
-    font-weight: normal;
-    margin: 0;
-}
-
-.dgMessageWrap a {
-    color: var(--font-dark);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.dgMessageWrap a:hover {
-    font-weight: 900;
-    text-decoration: underline;
 }
 
 /* == FORMS == */
