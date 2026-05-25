@@ -101,8 +101,8 @@ dotlottie-player {
 .pageHeader .feature {
     width: max-content;
     max-width: 30%;
-    font-family: var(--font-secondary);
-    font-weight: 500;
+    font-family: var(--font-primary);
+    font-weight: 100;
     color: var(--color-300);
     text-align: center;
     margin: unset;
