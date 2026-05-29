@@ -2,10 +2,10 @@
 /* 2026-05-21 */
 
 /* Fonts */
-/* Etch */
+/* Exo */
 @font-face {
   font-family: 'Exo';
-  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.0/font/Exo/Exo-variable.woff2') format('woff2-variations');
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.5/font/Exo/Exo.woff2') format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -14,8 +14,8 @@
 /* Stack Sans Notch */
 @font-face {
   font-family: 'Stack Sans Notch';
-  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.0/font/StackSansNotch/StackSansNotch-variable.woff2') format('woff2-variations');
-  font-weight: 100 900;
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.5/font/StackSansNotch/StackSansNotch.woff2') format('woff2-variations');
+  font-weight: 100 900; 
   font-style: normal;
   font-display: swap;
 }
@@ -23,10 +23,15 @@
 /* Victor Mono */
 @font-face {
   font-family: 'Victor Mono';
-  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.0/font/VictorMono/VictorMono-variable.woff2') format('woff2-variations');
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.5/font/VictorMono/VictorMono.woff2') format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('https://cdn.jsdelivr.net/gh/n8dw/nsr-assets@1.0.5/font/SourceCodePro/SourceCodePro.woff2') format('woff2-variations');
 }
 
 /* Variables */
@@ -44,5 +49,5 @@
   --color-950: #221a0c;
   --font-primary: 'Stack Sans Notch', sans-serif;
   --font-secondary: 'Exo', sans-serif;
-  --font-mono: 'Victor Mono', monospace;
+  --font-mono: 'Source Code Pro', monospace;
 }
