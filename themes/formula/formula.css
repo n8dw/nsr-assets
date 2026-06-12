@@ -258,6 +258,7 @@ body {
     color: var(--color-400);
     overflow: hidden;
     transition: 0.8s;
+    font-family: var(--font-secondary);
 }
 
 .megaButton .megaBtnIcon {
@@ -529,6 +530,7 @@ body {
     justify-content: center;
     width: 95%;
     flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .flexForm .formHead {
