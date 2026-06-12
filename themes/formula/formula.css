@@ -48,15 +48,6 @@ body {
     justify-content: center;
 }
 
-dotlottie-player {
-    border-radius: 100%;
-    background-color: var(--dark);
-    border: 2px solid var(--normal);
-    height: 400px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
 /* == Page Header == */
 
 .pageHeader {
@@ -91,6 +82,12 @@ dotlottie-player {
     border-radius: 10px;
     padding-left: 4px;
     padding-right: 4px;
+    transition: 0.8s;
+}
+
+.pageHeader .product:hover {
+    box-shadow: 0px 0px 20px -10px;
+    border-color: var(--color-100);
 }
 
 .pageHeader .product * {
@@ -140,68 +137,19 @@ dotlottie-player {
 }
 
 .pageContent::-webkit-scrollbar {
-    display: inline;
-    max-width: 10px;
-}
-
-.pageContent::-webkit-scrollbar-thumb {
-    background: var(--medium);
-    border: 2px solid var(--dark);
-    border-radius: 10px;
-}
-.pageContent::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
-}
-
-.miniRow {
-    width: -webkit-fill-available;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background-color: var(--color-400);
-}
-
-.miniRow .miniRowItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    overflow: hidden;
-}
-
-.miniRowItem h2 {
-    font-family: var(--font-secondary);
-    font-size: 1.2rem;
-    margin: 0px 0px 0px 5px;
-    color: var(--normal);
-}
-
-.miniRowItem p {
-    font-family: var(--font-secondary);
-    font-weight: 200;
-    font-size: 1rem;
-    margin: 0px 5px 0px 0px;
-    color: var(--normal);
+    display: initial;
 }
 
 .fullRow, .fullRowCompact {
     width: -webkit-fill-available;
     height: max-content;
-    border: 1px solid var(--color-300);
-    border-radius: 10px;
+    border: 1px solid transparent;
+    border-top-color: var(--color-700);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-bottom-width: 3px;
-    border-right-width: 4px;
 }
 
 .fullRow .header, .fullRowCompact .header {
@@ -218,7 +166,7 @@ dotlottie-player {
 
 .fullRow .header h2, .fullRowCompact .header h2 {
     margin: 0;
-    color: var(--color-100);
+    color: var(--color-200);
     font-family: var(--font-primary);
     font-weight: 900;
     box-sizing: border-box;
@@ -229,15 +177,6 @@ dotlottie-player {
     width: -webkit-fill-available;
 }
 
-.fullRow .header .smallTitle, .fullRowCompact .header .smallTitle {
-    margin: 0;
-    color: var(--color-50);
-    font-family: var(--font-primary);
-    font-weight: 200;
-    box-sizing: border-box;
-    font-size: 1.2rem;
-}
-
 .fullRow .content, .fullRowCompact .content {
     width: -webkit-fill-available;
     height: max-content;
@@ -246,10 +185,9 @@ dotlottie-player {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.fullRow .content:not(.table) *:not(span) {
     margin: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .content .bordered {
@@ -273,90 +211,6 @@ dotlottie-player {
     margin-bottom: 10px;
 }
 
-.contentRowHeader {
-    width: 150px;
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--color-50);
-    font-size: 1.25rem;
-}
-
-.contentRowBody {
-    width: -webkit-fill-available;
-    height: max-content;
-    font-family: var(--font-mono);
-    color: var(--color-50);
-}
-
-.contentRowBody h4 {
-    font-size: 1.1rem;
-    font-weight: 450;
-    margin: 5px 0px 5px 0px;
-}
-
-.contentRowBody p {
-    margin: 5px 0px 5px 0px;
-    font-style: italic;
-    font-weight: 100;
-}
-
-/*
-.homeNetItem {
-    min-width: 250px;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--normal);
-    border-radius: 10px;
-}
-
-.homeNetItem h3 {
-    color: var(--normal);
-    font-family: var(--font-dyn);
-    font-weight: normal;
-}
-
-.homeNetItem p {
-    color: var(--normal);
-    font-family: var(--font-dyn);
-    width: 100%;
-    text-align: center;
-    margin-bottom: unset !important;
-}
-
-.navItem {
-    width: -webkit-fill-available;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex-direction: column !important;
-}
-
-.metaRow {
-    width: -webkit-fill-available;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--normal);
-    font-family: var(--font-dyn);
-}
-
-.metaRow * {
-    margin: unset !important;
-}
-*/
-
 .fullRow h3 {
     display: block;
     margin: unset;
@@ -376,16 +230,6 @@ dotlottie-player {
     color: var(--normal);
     font-family: var(--font-dyn);
     font-weight: 900;
-}
-
-.fullRow .content .navItem .navBtn:enabled:hover {
-    background-color: var(--color-50);
-    color: var(--dark);
-}
-
-.fullRow .content .navItem .navBtn:disabled {
-    color: gray;
-    border-color: gray;
 }
 
 /* == Emphasis in Text == */
@@ -410,11 +254,10 @@ dotlottie-player {
     justify-content: space-between;
     box-sizing: border-box;
     border-radius: 15px;
-    border: 2px solid var(--color-300);
-    color: var(--color-100);
+    border: 1px dotted var(--color-400);
+    color: var(--color-400);
     overflow: hidden;
-    border-left-width: 6px;
-    border-right-width: 6px;
+    transition: 0.8s;
 }
 
 .megaButton .megaBtnIcon {
@@ -424,12 +267,11 @@ dotlottie-player {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: unset !important;
+    margin: 3px;
     overflow: hidden;
     box-sizing: border-box;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    border-right-color: var(--color-400);
+    border-radius: 15px;
+    transition: 0.5s;
 }
 
 .megaButton .megaBtnIcon img {
@@ -445,7 +287,7 @@ dotlottie-player {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin: unset !important;
+    margin: 15px;
 }
 
 .megaButton .left {
@@ -465,15 +307,47 @@ dotlottie-player {
     align-items: flex-end;
     justify-content: center;
     text-align: right;
+    margin: unset;
+    font-size: 1.2rem;
 }
 
 .megaButton:hover {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
+    border-color: var(--color-400);
+    border-style: solid;
+    color: var(--color-100);
+    box-shadow: 0px 0px 20px -10px;
+    transition: 0.8s;
 }
 
 .megaButton:hover .megaBtnIcon {
-    border-right-color: transparent;
+    border-color: transparent;
+    transition: 0.4s;
+}
+
+/* == Small Button == */
+.smallButton {
+    width: 200px;
+    height: max-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    color: var(--color-400);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px dotted var(--color-400);
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+.smallButton:hover {
+    color: var(--color-50);
+    box-shadow: 0px 0px 20px -10px;
+    transition: 0.5s;
 }
 
 /* == Page Footer == */
@@ -504,9 +378,9 @@ dotlottie-player {
 }
 
 .copyright {
-    font-family: var(--font-dyn);
-    font-size: 6px;
-    color: var(--light);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-700);
     text-decoration: none;
     font-weight: 400;
 }
@@ -514,24 +388,49 @@ dotlottie-player {
 /* == Marque Dialog == */
 
 .marqueDialog {
-    max-width: 800px;
-    padding: 10px;
+    width: 50%;
+    overflow: hidden scroll;
     background-color: var(--color-900);
     color: var(--color-100);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--color-600);
-    border-radius: 10px;
-    width: 90%;
-    overflow: hidden scroll;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px -10px;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease, transform 0.6s ease, display 0.6s allow-discrete;
+}
+
+.marqueDialog[open] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+@starting-style {
+    .marqueDialog[open] {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+.marqueDialog::backdrop {
+    background-color: var(--color-50);
+    transition: background-color 0.6s ease;
+}
+
+.marqueDialog[open]::backdrop {
+    background-color: var(--color-900);
+    opacity: 0.4;
+}
+
+@starting-style {
+    .marqueDialog[open]::backdrop {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 
 .marqueDialog::-webkit-scrollbar {
     display: none;
-}
-
-.marqueDialog::backdrop {
-    background-color: var(--color-700);
-    opacity: 0.8;
 }
 
 .marqueDialog h2 {
@@ -542,6 +441,7 @@ dotlottie-player {
     align-items: center;
     justify-content: space-between;
     font-family: var(--font-primary);
+    font-weight: 400;
     margin: 0;
     margin-bottom: 10px;
 }
@@ -553,63 +453,38 @@ dotlottie-player {
     justify-content: center;
 }
 
-.marqueDialog h2 .header {
-    margin-right: 5px;
+.marqueDialog .dialogContent {
+    width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.marqueDialog .description {
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-family: var(--font-secondary);
-    font-weight: 100;
-    opacity: 0.75;
+.marqueDialog .dialogContent .innerHead {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.marqueDialog input::placeholder {
-    font-family: var(--font-secondary);
-    font-weight: 500;
-    color: var(--color-50);
-    opacity: 0.5;
-}
-
-.marqueDialog input[type="text"], .marqueDialog input[type="number"] {
-    width: -webkit-fill-available;
+.marqueDialog .dialogContent .innerHead h3 {
     font-family: var(--font-secondary);
     font-weight: 300;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--color-50);
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: var(--color-50);
-    height: 30px;
-    text-align: center;
+    color: var(--color-200);
 }
 
-.marqueDialog label {
-    font-family: var(--font-secondary);
-    color: var(--color-50);
-}
-
-.marqueDialog select {
-    width: -webkit-fill-available;
-    margin-bottom: 10px;
-    background-color: transparent;
-    color: var(--color-50);
-    font-family: var(--font-secondary);
-    font-weight: 500;
-    text-align: center;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid var(--color-50);
-    opacity: 0.8;
+.marqueDialog .dialogContent .innerBody {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .marqueDialog .controls {
@@ -628,7 +503,7 @@ dotlottie-player {
     border-top: 2px solid var(--color-50);
 }
 
-.marqueDialog .btn, .marqueDialog input[type="submit"] {
+.marqueDialog .btn {
     height: 50px;
     min-width: max-content;
     width: 20%;
@@ -640,57 +515,60 @@ dotlottie-player {
     margin-top: auto;
 }
 
-.marqueDialog .btn:enabled:hover, .marqueDialog input[type="submit"]:hover {
+.marqueDialog .btn:enabled:hover {
     border-color: var(--color-100);
     background-color: transparent;
     color: var(--normal);
 }
 
-.marqueDialog .controls button {
-    background-color: transparent;
-    color: var(--color-200);
-    border-color: var(--color-400);
-}
-
-.marqueDialog .controls button:hover {
-    color: var(--color-50);
-    border-color: var(--color-800);
-}
-
-.marqueDialog .dynWrap {
-    width: 100%;
-    height: max-content;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    row-gap: 10px;
-    column-gap: 10px;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
 /* == FORMS == */
-.dialogForm {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: max-content;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .flexForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--normal);
-    border-radius: 10px;
-    width: -webkit-fill-available;
+    width: 95%;
     flex-wrap: wrap;
+}
+
+.flexForm .formHead {
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flexForm .formFields {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.flexForm .formFields .fieldRow {
+    width: max-content;
+    min-width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    line-height: 0.9;
+}
+
+.flexForm .formFields .bordered {
+    border: 1px dotted var(--color-300);
 }
 
 .flexForm input[type="text"], .flexForm input[type="number"], .flexForm select {
@@ -704,11 +582,34 @@ dotlottie-player {
     font-size: 1rem;
 }
 
+.flexForm input[type="checkbox"] {
+    accent-color: var(--color-900);
+    appearance: transparent;
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 2.2em;
+    height: 2em;
+    border: 1px solid var(--color-300);
+    border-radius: 2px;
+    font-size: 1rem;
+    transition: 0.8s;
+}
+
+.flexForm input[type="checkbox"]:checked {
+    appearance: auto;
+    border: 1px solid var(--color-300);
+    transition: 0.8s;
+}
+
+.flexForm input[type="checkbox"]:hover {
+    background-color: var(--color-300);
+}
+
 .flexForm label {
     width: inherit;
     font-family: var(--font-secondary);
     font-size: 1.2rem;
-    color: var(--color-50);
+    color: var(--color-200);
     margin-bottom: 2px !important;
 }
 
@@ -722,27 +623,6 @@ dotlottie-player {
     align-items: center;
     justify-content: flex-end;
     margin: unset;
-}
-
-.flexForm input[type="submit"] {
-    height: 50px;
-    min-width: max-content;
-    width: 98%;
-    background-color: transparent;
-    border: 1px solid var(--color-300);
-    border-radius: 10px;
-    font-family: var(--font-secondary);
-    font-weight: bold;
-    margin-top: auto;
-    color: var(--color-50);
-    font-size: 1.2rem;
-    transition: 0.8s;
-}
-
-.flexForm input[type="submit"]:hover {
-    background-color: var(--color-300);
-    color: var(--900);
-    transition: 0.8s;
 }
 
 .flexForm .messageConfirm {
@@ -769,79 +649,18 @@ dotlottie-player {
     border-radius: 10px;
 }
 
-.callToAction {
-  background: linear-gradient(to right, #ffadad, #ffd6a5, #ffd6a5, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff); /* Define your gradient */
-  background-size: 400% 100%; /* Make the background larger than the container */
-  -webkit-animation: rainbow 10s ease infinite;
-  -z-animation: rainbow 10s ease infinite;
-  -o-animation: rainbow 10s ease infinite;
-  animation: rainbow 10s ease infinite;
-  width: -webkit-fill-available;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  border: 5px solid white;
-  border-radius: 10px;
-  background-color: var(--medium-dark);
-}
-
-.callToAction * {
-  color: black !important;
-  font-family: var(--font-dyn);
-  margin: unset;
-  padding: 10px;
-}
-
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-
 /* MOBILE STYLES */
-@media only screen and (max-width: 600px) {
-    .megaButton, .comingSoonButton, .mbWide, .homeNetItem {
-        width: 90%;
-    }
-    .partial {
-        height: 100%;
+@media only screen and (max-width: 800px) {
+    .megaButton {
+        width: 100%;
     }
 
-    .miniRow {
-        flex-direction: column;
+    .marqueDialog {
+        width: 90%;
     }
 
     .pageContent::-webkit-scrollbar {
         display: none;
-    }
-    
-    .largePageHeader {
-        font-size: 2rem;
-    }
-
-    .subPageHeader {
-        font-size: 1.1rem;
-    }
-
-    .documentBody p {
-        text-align: justify;
     }
 
     .pageHeader {
