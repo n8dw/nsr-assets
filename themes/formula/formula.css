@@ -680,8 +680,8 @@ body {
     }
 
     .pageHeader .feature {
-        width: 80%;
-        max-width: unset;
+        width: 65%;
+        max-width: -webkit-fill-available;
         flex-basis: 80%;
         text-align: left;
         font-size: 1.1rem;
