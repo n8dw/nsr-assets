@@ -623,14 +623,6 @@ body {
         display: none;
     }
 
-    .pageHeader {
-        flex-direction: row;
-        height: max-content;
-        width: 100%;
-        flex-wrap: wrap;
-        min-height: 105px;
-    }
-
     .pageHeader .product {
         width: 97%;
         max-width: unset;
