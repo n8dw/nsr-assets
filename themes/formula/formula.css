@@ -67,7 +67,7 @@ body {
 
 .pageHeader .product {
     max-width: 300px;
-    min-width: 225px;
+    /* min-width: 225px; */
     width: max-content;
     height: 55px;
     display: flex;
