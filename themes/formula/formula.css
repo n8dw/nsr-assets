@@ -624,7 +624,6 @@ body {
     }
 
     .pageHeader .product {
-        width: 97%;
         max-width: unset;
         justify-content: center;
     }
